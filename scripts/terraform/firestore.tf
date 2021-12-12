@@ -9,5 +9,5 @@ resource "google_firestore_document" "articles" {
   document_id = "article_1"
   collection  = "articles"
   #fields = "{\"something\":{\"mapValue\":{\"fields\":{\"akey\":{\"stringValue\":\"avalue\"}}}}}"
-  fields = "{\"title\":{\"stringValue\":\"atitle\"},\"subtitle\":{\"stringValue\":\"asubtitle\"},\"blocks\":{\"mapValue\":{\"fields\":{\"type\":{\"stringValue\":\"text\"},\"value\":{\"stringValue\": \"article paragraph\"},\"index\":{\"integerValue\":\"0\"}}}},\"banner\":{\"stringValue\":\"url\"},\"tags\":{\"arrayValue\":{\"values\":[{\"stringValue\":\"atag\"}]}},\"creationDate\":{\"timestampValue\":\"2021-12-12T22:57:03Z\"},\"lastChangeDate\":{\"timestampValue\":\"2021-12-12T22:57:03Z\"},\"authorID\":{\"stringValue\":\"authorID\"}}"
+  fields = "{\"title\":{\"stringValue\":\"atitle\"},\"subtitle\":{\"stringValue\":\"asubtitle\"},\"blocks\":{\"mapValue\":{\"fields\":{\"type\":{\"stringValue\":\"text\"},\"value\":{\"stringValue\": \"article paragraph\"},\"index\":{\"integerValue\":\"0\"}}}},\"banner\":{\"stringValue\":\"url\"},\"tags\":{\"arrayValue\":{\"values\":[{\"stringValue\":\"atag\"}]}},\"creationDate\":{\"timestampValue\":\"2021-12-12T22:57:03Z\"},\"lastModified\":{\"timestampValue\":\"2021-12-12T22:57:03Z\"},\"authorID\":{\"stringValue\":\"authorID\"}}"
 }
