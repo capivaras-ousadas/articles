@@ -1,0 +1,22 @@
+@startuml
+title Articles domain
+
+class Article {
+    String Title;
+    String Subtitle;
+    String AuthorID;
+    Block[] Blocks;
+    String Banner;
+    String[] Tags;
+    time.Time CreationDate;
+    time.Time LastModified;
+}
+
+class Block {
+    String Type; // "text" or "image"
+    String Value; // text or image url
+    Integer Index; // index of the block
+}
+
+Article -> Block
+@enduml
