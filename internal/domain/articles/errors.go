@@ -22,4 +22,12 @@ var (
 		Code:    400,
 		Message: "article author is required",
 	}
+	ErrArticleAlreadyExists = Error{
+		Code:    401,
+		Message: "article already exists",
+	}
+	ErrArticleIDNotProvided = Error{
+		Code:    400,
+		Message: "article id is required",
+	}
 )
